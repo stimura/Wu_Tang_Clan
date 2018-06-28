@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<!-- HEAD & IMPORTS -->
+<head>
+<title> Bar Plot </title>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+
+
+<!-- STYLE -->
+<style>
+.radio{
+	text-align: center;
+}
+.row{
+	text-align: center;
+}
+</style>
+
+
+<!-- BODY -->
+<body>
+<div class='container'>
+
+	<!-- Plot Header -->
+	<div class='row'>
+	<h2> WTC Word Counts </h2>
+		<h3> Albums </h3>
+
+			<!-- Plot Buttons (by album) -->
+			<div class="radio">
+				<label class="radio-inline">
+					<input type="radio" name="album" value="album1" onclick="change(this.value)"> The Saga Continues
+				</label>
+				<label class="radio-inline">
+					<input type="radio" name="album" value="album2" onclick="change(this.value)"> A Better Tomorrow
+				</label>
+				<label class="radio-inline">
+					<input type="radio" name="album" value="album3" onclick="change(this.value)"> Wu-Tang Forever (Explicit)
+				</label>
+				<label class="radio-inline">
+					<input type="radio" name="album" value="album4" onclick="change(this.value)"> The W
+				</label>
+				<label class="radio-inline">
+					<input type="radio" name="album" value="album5" onclick="change(this.value)"> Wu-Tang Iron Flag
+				</label>
+				<label class="radio-inline">
+					<input type="radio" name="album" value="album6" onclick="change(this.value)"> Enter The Wu-Tang (36 Chambers) [Expanded Edition]
+				</label>
+				<label class="radio-inline">
+					<input type="radio" name="album" value="album7" onclick="change(this.value)"> 8 Diagrams
+				</label>
+				<label class="radio-inline">
+					<input type="radio" name="album" value="album8" onclick="change(this.value)"> All Albums
+				</label>				
+
+			</div>
+
+		<svg class="chart">
+		</svg>
+	</div>
+
+</div>
+</body>
+
+
+
+<!-- Plot Data -->
+<script src='plots.js'> </script>
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
