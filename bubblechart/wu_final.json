@@ -1,94 +1,98 @@
 {
- "name": "Wu-Tang",
- "alias": "Arguably the greatest rap group of all time!",
- "link": "https://open.spotify.com/artist/34EP7KEpOjXcM2TCat1ISk",
- "img": "https://i.ytimg.com/vi/iqWm8EuzkKk/maxresdefault.jpg",
- "children": [
-  {
-   "name": "Wu",
-   "children": [
-    {
+  "name": "Wu-Tang",
+  "alias": "Arguably the greatest rap group of all time!",
+  "link": "https://open.spotify.com/artist/34EP7KEpOjXcM2TCat1ISk",
+  "img": "http://logonoid.com/images/thumbs/wu-tang-clan-logo.png",
+  "size": 40000,
+  "children": [
+   {
+    "name": "Original Wu",
+    "children": [
+     {
       "member": "Ghostface Killah",
       "alias": "Tony Starks", 
       "link": "https://open.spotify.com/artist/6FD0unjzGQhX3b6eMccMJe",
       "img":  "https://i.scdn.co/image/ee2180486a42e11b6a0dfafdba9e2dbb9297a9b3",
       "albums": 12,
       "size": 40000
-    },
-    {
-      "member": "RZA",
-      "alias": "Bobby Digital", 
-      "link": "https://open.spotify.com/artist/4iCwCMnqsNZ6atvRiADgtn",
-      "img":  "http://www.gstatic.com/tv/thumb/persons/282410/282410_v9_bb.jpg",
-      "albums": 4,
-      "size": 40000
-    },
-    {
-      "member": "GZA", 
-      "alias": "Genius",
-      "link": "https://open.spotify.com/artist/6ns6XAOsw4B0nDUIovAOUO",
-      "img":  "https://i.gse.io/gse_media/118/4/1526756156-submission-20180519-39947-1xvg43bjpg?p=1",
-      "albums": 5,
-      "size": 40000
-    },
-    {
-      "member": "ODB", 
-      "alias": "Osiris",
-      "link": "https://open.spotify.com/artist/50NoVNy9GU1lCrDV8iGpyu",
-      "img":  "http://adra-matic.com/wp-content/uploads/2017/11/OlDirtyBastard_goat-700x410.jpg",
-      "albums": 2,
-      "size": 40000
-    },
-    {
-      "member": "Method Man", 
-      "alias": "Methtical",
-      "link": "https://open.spotify.com/artist/4VmEWwd8y9MCLwexFMdpwt",
-      "img":  "https://i.pinimg.com/originals/cb/13/ff/cb13ffad322d5224626d13e509fe8c3f.jpg",
-      "albums": 5,
-      "size": 40000
-    },
-    {
-      "member": "Raekwon", 
-      "alias": "The Chef",
-      "link": "https://open.spotify.com/artist/2yQf6b8hxahZaT5dHlWaB1",
-      "img":  "https://i.ytimg.com/vi/wg377tUFoo4/maxresdefault.jpg",
-      "albums": 7,
-      "size": 40000
-    },
-    {
-      "member": "Inspectah Deck", 
-      "alias": "Fifth Brotha",
-      "link": "https://open.spotify.com/artist/4OBbOrkD4geIjOLrICN3wO",
-      "img":  "https://i.ytimg.com/vi/ADkHeIxNmd0/maxresdefault.jpg",
-      "albums": 4,
-      "size": 40000
-    },
-    {
-      "member": "U-God", 
-      "alias": "Golden Arms",
-      "link": "https://open.spotify.com/artist/0G070wUUUBptmqGEKAAUVx",
-      "img":  "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/c/c9/U-God.jpg/revision/latest?cb=20161204193546",
-      "albums": 5,
-      "size": 40000
-    },
-    {
+     },
+     {
       "member": "Masta Killa", 
       "alias": "Noodles",
       "link": "https://open.spotify.com/artist/0ME1RawvWt3qOJnYnxVqeh",
       "img":  "https://www.lacasadelrap.com/wp-content/uploads/2017/09/Masta-Killa.jpg",
       "albums": 4,
       "size": 40000
-    },
-    {
-        "member": "Cappadonna", 
-        "alias": "Vocabulary Donna",
-        "link": "https://open.spotify.com/artist/0dS5xeDefwoUNasLUHnCjR",
-        "img":  "https://i.scdn.co/image/0e953f5e7bf637412bb396beb27674a7cf996d62",
-        "albums": 9,
-        "size": 40000
-  }
-  
+     },
+     {
+      "member": "U-God", 
+      "alias": "Golden Arms",
+      "link": "https://open.spotify.com/artist/0G070wUUUBptmqGEKAAUVx",
+      "img":  "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/c/c9/U-God.jpg/revision/latest?cb=20161204193546",
+      "albums": 5,
+      "size": 40000
+     },
+     {
+      "member": "Inspectah Deck", 
+      "alias": "Fifth Brotha",
+      "link": "https://open.spotify.com/artist/4OBbOrkD4geIjOLrICN3wO",
+      "img":  "https://i.ytimg.com/vi/ADkHeIxNmd0/maxresdefault.jpg",
+      "albums": 4,
+      "size": 40000
+     },
+     {
+      "member": "Raekwon", 
+      "alias": "The Chef",
+      "link": "https://open.spotify.com/artist/2yQf6b8hxahZaT5dHlWaB1",
+      "img":  "https://i.ytimg.com/vi/wg377tUFoo4/maxresdefault.jpg",
+      "albums": 7,
+      "size": 40000
+     },
+     {
+      "member": "Method Man", 
+      "alias": "Methtical",
+      "link": "https://open.spotify.com/artist/4VmEWwd8y9MCLwexFMdpwt",
+      "img":  "https://i.pinimg.com/originals/cb/13/ff/cb13ffad322d5224626d13e509fe8c3f.jpg",
+      "albums": 5,
+      "size": 40000
+     },
+     {
+      "member": "ODB", 
+      "alias": "Osiris",
+      "link": "https://open.spotify.com/artist/50NoVNy9GU1lCrDV8iGpyu",
+      "img":  "http://adra-matic.com/wp-content/uploads/2017/11/OlDirtyBastard_goat-700x410.jpg",
+      "albums": 2,
+      "size": 40000
+     },
+     {
+      "member": "GZA", 
+      "alias": "Genius",
+      "link": "https://open.spotify.com/artist/6ns6XAOsw4B0nDUIovAOUO",
+      "img":  "https://i.gse.io/gse_media/118/4/1526756156-submission-20180519-39947-1xvg43bjpg?p=1",
+      "albums": 5,
+      "size": 40000
+     },
+     {
+      "member": "RZA",
+      "alias": "Bobby Digital", 
+      "link": "https://open.spotify.com/artist/4iCwCMnqsNZ6atvRiADgtn",
+      "img":  "http://www.gstatic.com/tv/thumb/persons/282410/282410_v9_bb.jpg",
+      "albums": 4,
+      "size": 40000
+     }
    ]
-  }  
- ]
-}
+   },
+   {
+    "name": "Additional Wu",
+    "children": [
+     {
+      "member": "Cappadonna", 
+      "alias": "Vocabulary Donna",
+      "link": "https://open.spotify.com/artist/0dS5xeDefwoUNasLUHnCjR",
+      "img":  "https://i.scdn.co/image/0e953f5e7bf637412bb396beb27674a7cf996d62",
+      "albums": 9,
+      "size": 40000
+     }]
+   }  
+  ]
+ }
