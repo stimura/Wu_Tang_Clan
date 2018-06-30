@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Enter the 36 Chambers | Wu- Tang</title>
+    <title>Enter the 36 Chambers | Wu-Tang D3 Chart</title>
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
     <style>
-     @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
-      body {font-family: "Fjalla One", sans-serif, monospace; line-height: 160%; font-size: 16px;  margin: 0; }
+      @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+      body {font-family: 'Fjalla One', sans-serif, monospace; line-height: 160%; font-size: 16px;  margin: 0; }
       path.link {
         fill: none;
         stroke-width: 2px;
@@ -24,26 +24,24 @@
       a:active { color: #EE3124; }
     </style>
 </head>
+    
 
 <body>
     <header>
-      <h1>Wu-Tang Clan</h1>
-      <h2>Click to view each member of the clan</h2>
-      <h3>and visit their spotify page</h3>
+        <h1>Wu-Tang Clan</h1>
+        <h2>Click to view each member</h2>
+        <h3>and visit their spotify page</h3>
     </header>
     <!-- container for force layout visualisation  -->
     <section id="vis"></section> 
-
 <script>
-// some colour variables
-var tcBlack = "#130C0E";
 
 // rest of vars
 var w = 960,
     h = 800,
-    maxNodeSize = 100,
-    x_browser = 50,
-    y_browser = 50,
+    maxNodeSize = 50,
+    x_browser = 20,
+    y_browser = 25,
     root;
  
 var vis;
@@ -51,15 +49,16 @@ var force = d3.layout.force();
 
 vis = d3.select("#vis").append("svg").attr("width", w).attr("height", h);
  
-d3.json("wu_final.json", function(json) {
+d3.json("marvel.json", function(json) {
  
   root = json;
   root.fixed = true;
   root.x = w / 2;
   root.y = h / 4;
-
-       // Build the path
-       var defs = vis.insert("svg:defs")
+ 
+ 
+        // Build the path
+  var defs = vis.insert("svg:defs")
       .data(["end"]);
  
  
@@ -70,14 +69,9 @@ d3.json("wu_final.json", function(json) {
 });
  
  
-var node = svg.append("g")
-        .attr("class", "nodes")
-        .selectAll("circle")
-        .data(nodes_data)
-        .enter()
-        .append("circle")
-        .attr("r", 5);
-
+/**
+ *   
+ */
 function update() {
   var nodes = flatten(root),
       links = d3.layout.tree().links(nodes);
@@ -85,9 +79,9 @@ function update() {
   // Restart the force layout.
   force.nodes(nodes)
         .links(links)
-        .gravity(0.10)
-    .charge(-100)
-    .linkDistance(500)
+        .gravity(0)
+    .charge(-1000)
+    .linkDistance(100)
     .friction(0.5)
     .linkStrength(function(l, i) {return 1; })
     .size([w, h])
@@ -99,8 +93,8 @@ function update() {
  
     path.enter().insert("svg:path")
       .attr("class", "link")
-      .attr("marker-end", "url(#end)")
-      .style("stroke", "#eee");
+      // .attr("marker-end", "url(#end)")
+      .style("stroke", "#fff");
  
  
   // Exit any old paths.
@@ -120,27 +114,22 @@ function update() {
       .on("click", click)
       .call(force.drag);
  
-  // Append a circle
-  nodeEnter.append("svg:circle")
-      .attr("r", function(d) { return Math.sqrt(d.size) / 10 || 4.5; })
-      .style("fill", d.);
- 
-   
   // Append images
   var images = nodeEnter.append("svg:image")
         .attr("xlink:href",  function(d) { return d.img;})
-        .attr("x", function(d) { return -25;})
-        .attr("y", function(d) { return -25;})
-        .attr("height", 50)
-        .attr("width", 50);
+        .attr("x", function(d) { return -1;})
+        .attr("y", function(d) { return -1;})
+        .attr("height", 100)
+        .attr("width", 100);
   
   // make the image grow a little on mouse over and add the text details on click
   var setEvents = images
           // Append hero text
           .on( 'click', function (d) {
               d3.select("h1").html(d.member); 
-              d3.select("h2").html( "AKA " + d.alias); 
-              d3.select("h3").html ("Take me to " + "<a href='" + d.link + "' >"  + "the " + d.member + " spotify page ⇢"+ "</a>" ); 
+              d3.select("h2").html("AKA " +d.alias); 
+              d3. select("h3").html("Solo albums: " + d.albums )
+              d3.select("h4").html ("Take me to " + "<a href='" + d.link + "' >"  + "the " + d.member + " Spotify page ⇢"+ "</a>" ); 
            })
 
           .on( 'mouseenter', function() {
@@ -204,7 +193,7 @@ function tick() {
  * http://bl.ocks.org/mbostock/1129492
  */ 
 function nodeTransform(d) {
-  d.x =  Math.max(maxNodeSize, Math.min(w - (d.imgwidth/2|| 16), d.x));
+  d.x =  Math.max(maxNodeSize, Math.min(w - (d.imgwidth/2 || 16), d.x));
     d.y =  Math.max(maxNodeSize, Math.min(h - (d.imgheight/2 || 16), d.y));
     return "translate(" + d.x + "," + d.y + ")";
    }
@@ -249,10 +238,3 @@ function flatten(root) {
 
 </body>
 </html>
- 
- 
-
-
-
-
-
